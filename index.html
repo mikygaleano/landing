@@ -5,28 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
-  <body class="bg-white">    
-    <main>
+  <body class="bg-cyan-50">    
+    <main class="w-screen h-full">
       <section class="max-w-screen-ms h-full flex justify-center items-center">
         <div class="w-6/12 mt-20 max-sm:w-10/12">
-          <div class="flex flex-grow max-sm:flex-col items-center bg-slate-300 rounded-lg  h-52 container max-sm:justify-center m-auto">
+          <div class="flex flex-grow max-sm:flex-col items-center bg-slate-300 rounded-lg  h-52 container max-sm:justify-center m-auto shadow-xl">
             <figure class="w-24 h-24">
-              <img class="relative -left-1/4 max-sm:-left-0 max-sm:top-3 w-28 h-20 max-sm:w-20 rounded-full bg-black object-contain" src="./image/perfil.png" alt="maikidev">
+              <img class="relative -left-1/4 max-sm:-left-0 max-sm:top-3 w-28 h-20 max-sm:w-20 rounded-full bg-yellow-200 object-contain hover:scale-110" src="./image/perfil.png" alt="maikidev">
             </figure>
             <div class="w-full m-3 h-24 flex flex-col justify-end max-sm:ml-14">
               <span class="text-slate-500 text-lg max-sm:text-xs">Developer</span>
               <h1 class="text-xl font-bold max-sm:text-xs">Galeano Michael N.</h1>
               <div class="flex my-2 gap-2">
-                <a  href="https://linkedin.com/in/michaelgaleano/"><img class="w-5 p-1 bg-white rounded max-sm:hover:bg-slate-100" src="./image/linkedin.png" alt="linkedin"></a>
-                <a  href="https://github.com//mikygaleano/"><img class="w-5 p-1 bg-white rounded max-sm:hover:bg-slate-100" src="./image/github.png" alt="github"></a>
+                <a  href="https://linkedin.com/in/michaelgaleano/"><img class="w-5 p-1 bg-white rounded hover:bg-slate-100" src="./image/linkedin.png" alt="linkedin"></a>
+                <a  href="https://github.com//mikygaleano/"><img class="w-5 p-1 bg-white rounded hover:bg-slate-100" src="./image/github.png" alt="github"></a>
+                <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold px-2 rounded inline-flex items-center">
+                  <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
+                  <span>cv</span>
+                </button>
               </div>
             </div>
           </div>
         </div>
       </section>
     </main>
-
-
+    <footer class="container flex justify-center">
+      <span class="text-center self-center absolute bottom-5">Echo por @michael</span>
+    </footer>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
