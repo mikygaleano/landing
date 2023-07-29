@@ -31,7 +31,26 @@ function mode () {
 
 };
 
+function descarga () {
+    
+    const dowloadInstance = document.createElement('a');
+    dowloadInstance.href = './image/cv.jpg';
+    dowloadInstance.target = '_blank';
+
+    document.body.appendChild(dowloadInstance);
+
+    dowloadInstance.click();
+
+    document.body.removeChild(dowloadInstance);
+    
+};
+
+const btn = document.querySelector('#dowload');
+
 document.addEventListener('DOMContentLoaded', () => {
     particles('section');
     mode();
-})
+});
+
+btn.addEventListener('click', descarga);
+
