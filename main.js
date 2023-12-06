@@ -34,7 +34,7 @@ function mode () {
 function descarga () {
     
     const dowloadInstance = document.createElement('a');
-    dowloadInstance.href = './image/cv.jpg';
+    dowloadInstance.href = './cv.pdf';
     dowloadInstance.target = '_blank';
 
     document.body.appendChild(dowloadInstance);
